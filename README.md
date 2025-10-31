@@ -195,4 +195,9 @@ Find all American authors
 Set all books as available
 -
 <img width="1500" height="800" alt="books to be available" src="https://github.com/user-attachments/assets/4bb88048-4e35-4e98-b985-dcbb618722b3" />
+
 <img width="1500" height="800" alt="all books are available to be booked" src="https://github.com/user-attachments/assets/a3442cd5-bc7e-46e5-83ad-5d8c2133c94d" />
+
+Find all books that are available AND published after 1950
+-
+<img width="1500" height="800" alt="available books and published after 1950" src="https://github.com/user-attachments/assets/e1d3e2f7-3fdf-49fe-806b-87ece7f82ca8" />

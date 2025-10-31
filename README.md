@@ -131,3 +131,7 @@ Get all books
 -
 <img width="1500" height="800" alt="get all books" src="https://github.com/user-attachments/assets/46774d80-ee55-4402-a316-331681d00d9d" />
 
+Get a book by title
+-
+<img width="1500" height="800" alt="get a book by title" src="https://github.com/user-attachments/assets/5c946106-276f-4963-8753-8a842bab7697" />
+

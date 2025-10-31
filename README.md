@@ -168,9 +168,22 @@ Add a borrowed book to a patron’s record
 
 ## Sprint 5: Delete Operations
 
-Delete a book by title.
+Delete a book by title
 -
 
 <img width="1500" height="800" alt="delete book by title" src="https://github.com/user-attachments/assets/2fdabb83-2218-49f0-b68f-5c967ba9679b" />
 
 <img width="1500" height="800" alt="how it looks like" src="https://github.com/user-attachments/assets/034f4ffd-1c66-4f3b-afba-30307c39bf65" />
+
+Delete an author by ID
+-
+<img width="1500" height="800" alt="Screenshot 2025-10-31 101359" src="https://github.com/user-attachments/assets/1afb909c-3da8-4b26-bc79-c70457454d71" />
+<img width="1500" height="800" alt="Screenshot 2025-10-31 101421" src="https://github.com/user-attachments/assets/48e28fa8-2171-4383-b551-073ee9d4f8ec" />
+
+
+
+## Sprint 6: Advanced Queries
+
+Find books published after 1950
+-
+<img width="1500" height="800" alt="Screenshot 2025-10-31 100755" src="https://github.com/user-attachments/assets/3d51c77f-9085-4f7e-acdd-0c27e7b5f4b9" />

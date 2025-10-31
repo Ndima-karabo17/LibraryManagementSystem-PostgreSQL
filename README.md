@@ -83,3 +83,17 @@ INSERT INTO Books (id, title, author_id, genres, published_year, available) VALU
 (9, 'Crime and Punishment', 9, ARRAY['Philosophical Novel'], 1866, TRUE),
 
 (10, 'The Hobbit', 10, ARRAY['Fantasy'], 1937, TRUE);
+
+To create patrons table 
+-
+
+CREATE TABLE Patrons (
+
+    id SERIAL PRIMARY KEY,
+	
+    name VARCHAR(100),
+	
+    email VARCHAR(100),
+	
+    borrowed_books INT[]
+);

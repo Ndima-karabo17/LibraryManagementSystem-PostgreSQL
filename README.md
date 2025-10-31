@@ -139,3 +139,7 @@ Get all books by a specific author
 -
 
 <img width="1500" height="800" alt="get all books aby a specific author" src="https://github.com/user-attachments/assets/f62a4c56-c9e8-4130-a0b1-8333ba7b63e5" />
+
+Get all available books
+-
+<img width="1500" height="800" alt="get all available books" src="https://github.com/user-attachments/assets/4aab0685-7931-46ea-af17-485553cc30e1" />

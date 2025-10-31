@@ -150,3 +150,11 @@ Mark a book as borrowed (set available = false).
 -
 
 <img width="1500" height="800" alt="update available to false" src="https://github.com/user-attachments/assets/41b4a3ed-769d-4dfa-ac74-e9f27a676c96" />
+
+<img width="1500" height="800" alt="how it looks like" src="https://github.com/user-attachments/assets/b7f84f9f-62e7-4782-9f75-bf04c95dfb5a" />
+
+Add a new genre to an existing book
+-
+<img width="1500" height="800" alt="adding new genre" src="https://github.com/user-attachments/assets/c1ddf89f-faa4-488d-acd1-ebe4e01fca2d" />
+
+<img width="1500" height="800" alt="how it looks like" src="https://github.com/user-attachments/assets/ecba5cfe-5cc3-4561-a8ac-80b8c6840558" />

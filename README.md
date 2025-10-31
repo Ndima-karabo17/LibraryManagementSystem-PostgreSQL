@@ -41,3 +41,21 @@ INSERT INTO Authors (id, name, nationality, birth_year, death_year) VALUES
 (9, 'Fyodor Dostoevsky', 'Russian', 1821, 1881),
 
 (10, 'J.R.R. Tolkien', 'British', 1892, 1973);
+
+
+To create table Books
+-
+CREATE TABLE Books (
+
+    id INT PRIMARY KEY,
+	
+    title VARCHAR(255),
+	
+    author_id INT REFERENCES Authors(id),
+	
+    genres TEXT[],
+	
+    published_year INT,
+	
+    available BOOLEAN
+);

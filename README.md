@@ -201,3 +201,7 @@ Set all books as available
 Find all books that are available AND published after 1950
 -
 <img width="1500" height="800" alt="available books and published after 1950" src="https://github.com/user-attachments/assets/e1d3e2f7-3fdf-49fe-806b-87ece7f82ca8" />
+
+Find authors whose names contain "George"
+-
+<img width="1500" height="800" alt="authors whose names contain George" src="https://github.com/user-attachments/assets/21cfa8a3-a90b-4775-9a2a-108a4f8e328f" />

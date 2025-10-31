@@ -143,3 +143,10 @@ Get all books by a specific author
 Get all available books
 -
 <img width="1500" height="800" alt="get all available books" src="https://github.com/user-attachments/assets/4aab0685-7931-46ea-af17-485553cc30e1" />
+
+## Sprint 4: Update Operations
+
+Mark a book as borrowed (set available = false).
+-
+
+<img width="1500" height="800" alt="update available to false" src="https://github.com/user-attachments/assets/41b4a3ed-769d-4dfa-ac74-e9f27a676c96" />

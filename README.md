@@ -205,3 +205,8 @@ Find all books that are available AND published after 1950
 Find authors whose names contain "George"
 -
 <img width="1500" height="800" alt="authors whose names contain George" src="https://github.com/user-attachments/assets/21cfa8a3-a90b-4775-9a2a-108a4f8e328f" />
+
+Increment the published year 1869 by 1
+-
+<img width="1500" height="800" alt="move from 1869 to 1870" src="https://github.com/user-attachments/assets/dab160e4-7ef9-4841-84c8-56be2777e522" />
+<img width="1499" height="837" alt="updated one" src="https://github.com/user-attachments/assets/473149e3-7f52-43c2-ba24-314ec3a523e9" />

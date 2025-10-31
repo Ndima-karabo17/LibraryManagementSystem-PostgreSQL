@@ -158,3 +158,9 @@ Add a new genre to an existing book
 <img width="1500" height="800" alt="adding new genre" src="https://github.com/user-attachments/assets/c1ddf89f-faa4-488d-acd1-ebe4e01fca2d" />
 
 <img width="1500" height="800" alt="how it looks like" src="https://github.com/user-attachments/assets/ecba5cfe-5cc3-4561-a8ac-80b8c6840558" />
+
+Add a borrowed book to a patron’s record
+-
+<img width="1500" height="800" alt="add a borrowed book to a patrons record" src="https://github.com/user-attachments/assets/087bef8c-6b8b-4bbd-b6d2-717f1b00d6fe" />
+
+<img width="1500" height="800" alt="how it looks like" src="https://github.com/user-attachments/assets/4b3d3d5c-ada5-44d1-9ccd-754930192d8d" />

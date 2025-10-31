@@ -135,3 +135,7 @@ Get a book by title
 -
 <img width="1500" height="800" alt="get a book by title" src="https://github.com/user-attachments/assets/5c946106-276f-4963-8753-8a842bab7697" />
 
+Get all books by a specific author
+-
+
+<img width="1500" height="800" alt="get all books aby a specific author" src="https://github.com/user-attachments/assets/f62a4c56-c9e8-4130-a0b1-8333ba7b63e5" />

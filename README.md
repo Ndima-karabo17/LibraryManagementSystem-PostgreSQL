@@ -5,11 +5,15 @@ link them with relationships, and run advanced queries.
 
 To create table Author:
 -
-CREATE TABLE Authors(
+CREATE TABLE Authors (
 
-	nationality VARCHAR(255),
+    id INT PRIMARY KEY,
 	
-	lifespan INT,
+    name VARCHAR(100),
 	
-	name VARCHAR(100)
+    nationality VARCHAR(255),
+	
+    birth_year INT,
+	
+    death_year INT
 );

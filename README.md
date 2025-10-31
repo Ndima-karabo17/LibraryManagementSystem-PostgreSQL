@@ -121,3 +121,13 @@ INSERT INTO Patrons (id, name, email, borrowed_books) VALUES
 (9, 'Ivy Taylor', 'ivy@example.com', ARRAY[]::INT[]),
 
 (10, 'Jack Anderson', 'jack@example.com', ARRAY[7, 8]);
+
+
+
+
+## Sprint 3: Read Operations (Queries)
+
+Get all books
+-
+<img width="1500" height="800" alt="get all books" src="https://github.com/user-attachments/assets/46774d80-ee55-4402-a316-331681d00d9d" />
+

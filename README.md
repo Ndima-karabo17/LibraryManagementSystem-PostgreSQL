@@ -165,3 +165,12 @@ Add a borrowed book to a patron’s record
 <img width="1500" height="800" alt="add a borrowed book to a patrons record" src="https://github.com/user-attachments/assets/087bef8c-6b8b-4bbd-b6d2-717f1b00d6fe" />
 
 <img width="1500" height="800" alt="how it looks like" src="https://github.com/user-attachments/assets/4b3d3d5c-ada5-44d1-9ccd-754930192d8d" />
+
+## Sprint 5: Delete Operations
+
+Delete a book by title.
+-
+
+<img width="1500" height="800" alt="delete book by title" src="https://github.com/user-attachments/assets/2fdabb83-2218-49f0-b68f-5c967ba9679b" />
+
+<img width="1500" height="800" alt="how it looks like" src="https://github.com/user-attachments/assets/034f4ffd-1c66-4f3b-afba-30307c39bf65" />

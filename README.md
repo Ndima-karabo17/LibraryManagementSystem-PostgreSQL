@@ -6,6 +6,7 @@ link them with relationships, and run advanced queries.
 To create table Author:
 -
 CREATE TABLE Authors(
+
 	nationality VARCHAR(255),
 	
 	lifespan INT,

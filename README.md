@@ -7,6 +7,8 @@ To create table Author:
 -
 CREATE TABLE Authors(
 	nationality VARCHAR(255),
+	
 	lifespan INT,
+	
 	name VARCHAR(100)
 );

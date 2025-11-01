@@ -213,3 +213,11 @@ Increment the published year 1869 by 1
 
 
 ## Instructions for running queries in pgAdmin or psql
+
+1. Open pgAdmin
+2. Connect to a Database (In the Browser panel on the left, expand: Servers → PostgreSQL → Databases)
+3. Right-click your database and select Connect
+4. Open the Query Tool (Right-click the database → Query Tool)
+5. Write Your Query (SELECT * FROM Authors;)
+6. Execute the Query (Click the ▶️ Execute/Run button)
+7. The results appear in the Data Output pane at the bottom

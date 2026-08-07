@@ -1,0 +1,85 @@
+-- ============================================================
+-- Library Management System - Full Schema
+-- Run this once against a fresh PostgreSQL database.
+-- ============================================================
+
+DROP TABLE IF EXISTS BorrowingRecords;
+DROP TABLE IF EXISTS Books;
+DROP TABLE IF EXISTS Patrons;
+DROP TABLE IF EXISTS Authors;
+
+CREATE TABLE Authors (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    nationality VARCHAR(255),
+    birth_year INT,
+    death_year INT
+);
+
+INSERT INTO Authors (id, name, nationality, birth_year, death_year) VALUES
+(1, 'George Orwell', 'British', 1903, 1950),
+(2, 'Harper Lee', 'American', 1926, 2016),
+(3, 'F. Scott Fitzgerald', 'American', 1896, 1940),
+(4, 'Aldous Huxley', 'British', 1894, 1963),
+(5, 'J.D. Salinger', 'American', 1919, 2010),
+(6, 'Herman Melville', 'American', 1819, 1891),
+(7, 'Jane Austen', 'British', 1775, 1817),
+(8, 'Leo Tolstoy', 'Russian', 1828, 1910),
+(9, 'Fyodor Dostoevsky', 'Russian', 1821, 1881),
+(10, 'J.R.R. Tolkien', 'British', 1892, 1973);
+
+CREATE TABLE Books (
+    id INT PRIMARY KEY,
+    title VARCHAR(255),
+    author_id INT REFERENCES Authors(id) ON DELETE SET NULL,
+    genres TEXT[],
+    published_year INT,
+    available BOOLEAN DEFAULT TRUE
+);
+
+INSERT INTO Books (id, title, author_id, genres, published_year, available) VALUES
+(1, '1984', 1, ARRAY['Dystopian', 'Political Fiction'], 1949, TRUE),
+(2, 'To Kill a Mockingbird', 2, ARRAY['Southern Gothic', 'Bildungsroman'], 1960, TRUE),
+(3, 'The Great Gatsby', 3, ARRAY['Tragedy'], 1925, TRUE),
+(4, 'Brave New World', 4, ARRAY['Dystopian', 'Science Fiction'], 1932, TRUE),
+(5, 'The Catcher in the Rye', 5, ARRAY['Realist Novel', 'Bildungsroman'], 1951, TRUE),
+(6, 'Moby-Dick', 6, ARRAY['Adventure Fiction'], 1851, TRUE),
+(7, 'Pride and Prejudice', 7, ARRAY['Romantic Novel'], 1813, TRUE),
+(8, 'War and Peace', 8, ARRAY['Historical Novel'], 1869, TRUE),
+(9, 'Crime and Punishment', 9, ARRAY['Philosophical Novel'], 1866, TRUE),
+(10, 'The Hobbit', 10, ARRAY['Fantasy'], 1937, TRUE);
+
+CREATE TABLE Patrons (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    borrowed_books INT[]
+);
+
+INSERT INTO Patrons (name, email, borrowed_books) VALUES
+('Alice Johnson', 'alice@example.com', ARRAY[]::INT[]),
+('Bob Smith', 'bob@example.com', ARRAY[]::INT[]),
+('Carol White', 'carol@example.com', ARRAY[]::INT[]),
+('David Brown', 'david@example.com', ARRAY[]::INT[]),
+('Eve Davis', 'eve@example.com', ARRAY[]::INT[]),
+('Frank Moore', 'frank@example.com', ARRAY[]::INT[]),
+('Grace Miller', 'grace@example.com', ARRAY[]::INT[]),
+('Hank Wilson', 'hank@example.com', ARRAY[]::INT[]),
+('Ivy Taylor', 'ivy@example.com', ARRAY[]::INT[]),
+('Jack Anderson', 'jack@example.com', ARRAY[]::INT[]);
+
+-- Proper borrowing-history table. The Patrons.borrowed_books array only
+-- tells you what's currently out; this table tracks full history,
+-- due dates and returns, which the app relies on.
+CREATE TABLE BorrowingRecords (
+    id SERIAL PRIMARY KEY,
+    book_id INT REFERENCES Books(id) ON DELETE CASCADE,
+    patron_id INT REFERENCES Patrons(id) ON DELETE CASCADE,
+    borrow_date DATE NOT NULL DEFAULT CURRENT_DATE,
+    due_date DATE NOT NULL DEFAULT (CURRENT_DATE + INTERVAL '14 days'),
+    return_date DATE,
+    returned BOOLEAN NOT NULL DEFAULT FALSE
+);
+
+CREATE INDEX idx_borrowing_book ON BorrowingRecords(book_id);
+CREATE INDEX idx_borrowing_patron ON BorrowingRecords(patron_id);

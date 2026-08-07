@@ -1,0 +1,14 @@
+# Maven build output (includes all .class files)
+target/
+
+# Local database credentials — never commit real credentials
+src/main/resources/db.property
+
+# IDE / editor files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db

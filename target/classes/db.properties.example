@@ -1,0 +1,5 @@
+# Copy this file to db.properties (same folder) and fill in your own values.
+# db.properties is where the app actually reads its connection settings from.
+db.url=jdbc:postgresql://localhost:5432/library
+db.user=postgres
+db.password=yourpassword
